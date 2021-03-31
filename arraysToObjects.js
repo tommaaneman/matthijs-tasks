@@ -1,7 +1,5 @@
 import express from 'express';
 import chalk from 'chalk';
-const app = express();
-const port = 8000;
 
 const testArray = ['tom', 'poep', 'hoofd'];
 const testArrays = [['tom', 'poep', 'hoofd'], ['matthijs', 'butt', 'face']];
@@ -33,7 +31,6 @@ export function arrayToObject(array) {
         const data = new mensenNoLogic(array[0], array[1], array[2]);
         return data     
     };
-
 }
 
 for(var i of testArrays) {
